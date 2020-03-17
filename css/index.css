@@ -257,6 +257,11 @@ a {
   padding: 10px 0 10px 0;
   border: 1px solid black;
   width: 100%;
+  border-color: grey;
+}
+
+.servicetaget {
+  border-top: 3px solid grey;
 }
 
 .logo {
