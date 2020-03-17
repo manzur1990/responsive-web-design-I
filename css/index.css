@@ -63,7 +63,7 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-  /* border: 1px solid blue; */
+  
 }
 
 html,
@@ -86,9 +86,8 @@ h5 {
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
-
 
 /* BODY */
 
@@ -101,45 +100,26 @@ h5 {
 
 nav {
   display: flex;
-
 }
 
 .navParent {
- 
   display: flex;
   justify-content: space-around;
   width: 100%;
-  
 }
-.links{
-display: flex;
-justify-content: space-between;
-width: 65%;
-align-items: center;
-
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-   width: 30%; 
-   
+  width: 30%;
 }
 
-
-/* .nav-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 60px;
-  width: auto;
-}
-
-.logo {
-  height: 40px;
-  margin-left: 2rem;
-}
 
 a {
   text-decoration: none;
@@ -150,7 +130,7 @@ a:hover {
   text-decoration: none;
   color: black;
   font-size: 34px;
-} */
+} 
 
 /* TITLE & ROUND IMAGE SECTION */
 
@@ -167,10 +147,9 @@ a:hover {
   line-height: 60px;
 }
 
-
-  .title h1 {
-    font-size: 72px;
-  }
+.title h1 {
+  font-size: 72px;
+}
 
 button {
   font-size: 16px;
@@ -187,8 +166,8 @@ button {
 }
 
 .info-content {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   margin: 30px;
 }
 
@@ -205,11 +184,11 @@ button {
 }
 
 .top-wrapper {
- width: 450px;
+  width: 450px;
 }
 .bottom-wrapper {
   width: 340px;
- }
+}
 
 .bottom-content {
   display: flex;
@@ -218,7 +197,6 @@ button {
 .long-img {
   width: 50rem;
 }
-
 
 /* FOOTER SECTION */
 
@@ -233,13 +211,43 @@ button {
   padding: 5%;
 }
 
-
 /* Display Queries */
 
-@media (max-width: 800px) {
 
-.img-header {
-  display:none;
+/* Tablet Display */
+
+
+@media (max-width: 800px) {
+  .img-header {
+    display: none;
+  }
+.navParent {
+  flex-direction: column;
 }
 
-}  
+.links {
+  order:2;
+  width: 100%;
+  
+}
+
+.logo {
+  order:1;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.top-wrapper{
+
+  font-size: 16px;
+  padding: 0 5px 0 0;
+}
+
+.bottom-wrapper{
+  margin: 0px 35px 0 0;
+    font-size: 16px;
+}
+
+}
+
+
