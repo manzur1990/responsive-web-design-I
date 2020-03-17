@@ -63,7 +63,7 @@ table {
 * {
   box-sizing: border-box;
   max-width: 100%;
-  
+  /* border: 1px green solid; */
 }
 
 html,
@@ -83,11 +83,6 @@ h5 {
 }
 
 /* Your code starts here! */
-
-* {
-  box-sizing: border-box;
-  /* border: 1px solid red; */
-}
 
 /* BODY */
 
@@ -251,3 +246,45 @@ button {
 }
 
 
+@media (max-width: 500px) {
+
+.links {
+  flex-direction: column;
+}  
+
+a {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: -5%;
+}
+
+.title {
+  line-height: 0; 
+}
+button {
+  margin-top: 50px;
+}
+
+.info-content{
+  width:100%vh;
+  padding:0;
+}
+
+.top-content  {
+  flex-direction: column;
+}
+.bottom-content{
+  flex-direction: column;
+}
+.bottom-wrapper {
+  width: 90%;
+}
+
+}
