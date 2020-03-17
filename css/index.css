@@ -1,3 +1,295 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; */
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  /* border: 1px green solid; */
+}
+
+html,
+body {
+  height: auto;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* BODY */
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* NAV & ICON SECTION */
+
+nav {
+  display: flex;
+}
+
+.navParent {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
 
 
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 24px;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-size: 34px;
+} 
+
+/* TITLE & ROUND IMAGE SECTION */
+
+.title-box {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.title {
+  text-align: center;
+  line-height: 60px;
+}
+
+.title h1 {
+  font-size: 72px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px 40px 5px 40px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* INFO SECTION */
+
+.info1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 30px;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+
+.top-wrapper {
+  width: 450px;
+}
+.bottom-wrapper {
+  width: 340px;
+}
+
+.bottom-content {
+  display: flex;
+}
+
+.long-img {
+  width: 50rem;
+}
+
+/* FOOTER SECTION */
+
+.contact-bottom {
+  width: 24%;
+  margin-top: 1rem;
+  margin-left: 28px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 5%;
+}
+
+/* Display Queries */
+
+
+/* Tablet Display */
+
+
+@media (max-width: 800px) {
+  .img-header {
+    display: none;
+  }
+.navParent {
+  flex-direction: column;
+}
+
+.links {
+  order:2;
+  width: 100%;
+  
+}
+
+.logo {
+  order:1;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.top-wrapper{
+
+  font-size: 16px;
+  padding: 0 5px 0 0;
+}
+
+.bottom-wrapper{
+  margin: 0px 35px 0 0;
+    font-size: 16px;
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+.links {
+  flex-direction: column;
+}  
+
+a {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border: 1px solid black;
+  width: 100%;
+  border-color: grey;
+}
+
+.servicetaget {
+  border-top: 3px solid grey;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: -5%;
+}
+
+.title {
+  line-height: 0; 
+}
+button {
+  margin-top: 50px;
+}
+
+.info-content{
+  width:100%vh;
+  padding:0;
+}
+
+.top-content  {
+  flex-direction: column;
+}
+.bottom-content{
+  flex-direction: column;
+}
+.bottom-wrapper {
+  width: 90%;
+}
+
+}
